@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>SENAI-PROJECT</title>
+</head>
+<body>
+    <span class="carregando"></span>
+    <a id="logosenai" href="https://www.pe.senai.br/" target="_blank"> <img id="imgsenai" src="./imagens usadas/R.jpg" alt="" width="200px"></a>
+    <div class="container">
+        <h2>Conectar-se</h2>
+        <div class="inputlogin">
+            <label for="">Matrícula do Funcionário</label>
+            <div class="inputgeral">
+                <img src="./imagens usadas/Design_sem_nome__3_-removebg-preview.png" alt="" width="32px">
+                <input type="text" id="inputemail">
+            </div>
+        </div>
+        <div class="inputsenha">
+            <label for="">Senha</label>
+            <div class="inputgeral">
+                <img src="./imagens usadas/Design_sem_nome__5_-removebg-preview.png" alt="" width="32px">
+                <input type="password" placeholder="" id="inputsenha">
+            </div>
+        </div>
+        <h5 id="esqueceu" onclick="esqueceu()">Esqueceu a senha?</h5>
+        <button id="login" onclick="entrar()">ENTRAR</button>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

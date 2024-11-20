@@ -1,0 +1,149 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    background-color: #2f2c79;
+}
+.container{
+    filter: drop-shadow(2px 2px 20px #2d2c55 );
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 8%;
+    width: 30%;
+    height: 55vh;
+    background-color: #2d2c55;
+    color: white;
+    filter: blur(10%);
+}
+button:hover{
+    scale: 1.1;
+    transition: 0.5s;
+}
+.inputlogin{
+    margin-top: 2%;
+    width: 280px;
+    height: 47px;
+    border-bottom: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.inputlogin:hover{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.21);
+    transition: 0.5s;
+}
+input{
+    background: none;
+    border: none;
+    width: 250px;
+    height: 20px;
+    margin-top: 2%;
+    outline: none;
+    color: white;
+    font-size: 17px;
+}
+input::placeholder{
+    color: white;
+}
+.inputgeral{
+    display: flex;
+    justify-content: space-between;
+}
+#logosenai{
+    cursor: pointer;
+}
+.inputsenha{
+    margin-top: 5%;
+    width: 280px;
+    height: 47px;
+    border-bottom: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.inputsenha:hover{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.21);
+    transition: 0.5s;
+}
+button{
+    margin-top: 10%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    transition: 0.5s;
+    background: none;
+    backdrop-filter: blur(20px);
+    color: white;
+    background-color: #2f2c79;
+}
+#esqueceu{
+    cursor: pointer;
+}
+#imgsenai{
+    margin-top: 5%;
+    border-radius: 10px;
+    filter: drop-shadow(2px 2px 20px #2d2d2d);
+    transition: 0.5s;
+}
+#imgsenai:hover{
+    scale: 1.1;
+    transition: 0.5s;
+}
+.popup{
+    background-color: #2d2c55;
+    border-radius: 20px;
+    color: white;
+}
+.confirmbutton{
+    height: 40px;
+    width: 200px;
+    background-color: #2f2c79;
+    transition: 0.5s;
+}
+#login{
+    margin-top: -1%;
+}
+#carregando{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    display: none;
+    position: absolute;
+    border-top: 12px solid transparent;
+    border: 12px solid white;
+    border-top: 12px solid transparent;
+    border-radius: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    animation: loading 1s linear infinite;
+}
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@media screen and (max-width: 500px){
+    body{
+        width: 98%;
+        height: 100%;
+    }
+    .container{
+        background: none;
+        width: 50%;
+    }
+    button{
+        background-color: #2d2c5554;
+    }
+}
